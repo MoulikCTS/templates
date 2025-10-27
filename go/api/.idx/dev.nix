@@ -18,6 +18,7 @@
     workspace = {
       onCreate = {
         # Open editors for the following files by default, if they exist:
+        go-mod-tidy = "go mod tidy";
         default.openFiles = ["main.go"];
       };
       # Runs when a workspace is (re)started
