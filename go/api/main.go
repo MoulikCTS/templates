@@ -20,7 +20,6 @@ func main() {
 
 	// Start HTTP server.
 	log.Printf("listening on port %s", port)
-	log.Printf("URL: http://localhost:%s", port)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
 		log.Fatal(err)
 	}
